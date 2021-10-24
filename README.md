@@ -16,3 +16,6 @@ It uses:
    - `yarn create vite <project-name> --template react-ts`
    - `npm init vite@latest <project-name> --template react-ts`
    - `cd <project-name>`
+1. Install packages
+   - `yarn` | `yarn install`
+   - `npm install`
