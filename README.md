@@ -28,3 +28,6 @@ It uses:
    - `yarn run eslint --init`
    - `npx eslint --init`
    - **NOTE**: At the end of this step you will be asked to install some packages through `npm`. If you accept it, you will need to run `yarn install`, afterwards. If you do not accept it, manually install the packages mentioned.
+1. Install Prettier & plugins
+    - `yarn add prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb-typescript --dev`
+    - `npm install prettier eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb-typescript --save-dev`
