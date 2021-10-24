@@ -19,3 +19,12 @@ It uses:
 1. Install packages
    - `yarn` | `yarn install`
    - `npm install`
+1. ~~Install ESLint~~
+   - **CAUTION**: Proceed to the next step, this one might install a version that does not meet the requirements of 'devDependencies'
+   - `yarn add eslint --dev`
+   - `npm install eslint --save-dev`
+1. Initialize ESLint
+   - `eslint --init`
+   - `yarn run eslint --init`
+   - `npx eslint --init`
+   - **NOTE**: At the end of this step you will be asked to install some packages through `npm`. If you accept it, you will need to run `yarn install`, afterwards. If you do not accept it, manually install the packages mentioned.
