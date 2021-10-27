@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 const App = () => <h1>Hello, world!</h1>;
 
