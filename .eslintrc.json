@@ -10,6 +10,6 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "prettier", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint"],
   "rules": {}
 }
