@@ -1,0 +1,29 @@
+name: Create Archive
+
+on:
+  push:
+    tags:
+    - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@master
+
+    # Zip Release · Actions · GitHub Marketplace - https://bit.ly/3bn61BV
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
+      with:
+        type: 'zip'
+        filename: 'starting-point.zip'
+        exclusions: '*.git* /*node_modules/* README.md'
+
+    # Create Release · Actions · GitHub Marketplace - https://bit.ly/3CEusGU
+    - name: Upload Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "starting-point.zip"
+        bodyFile: "RELEASE.md"
+        token: ${{ secrets.GITHUB_TOKEN }}
