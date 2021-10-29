@@ -9,7 +9,6 @@ If you need to disable _a11y_ linting rules, change `airbnb` to `airbnb-base` in
   "airbnb-base",
   "airbnb-typescript",
   "plugin:react/jsx-runtime",
-  "plugin:prettier/recommended",
-  "prettier"
+  "plugin:prettier/recommended"
 ]
 ```
