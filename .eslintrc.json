@@ -1,20 +1,10 @@
 {
   "env": {
-    "browser": true,
     "es2021": true
   },
-  "extends": [
-    "airbnb",
-    "airbnb-typescript",
-    "plugin:react/jsx-runtime",
-    "plugin:prettier/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
+  "extends": ["airbnb-typescript-prettier", "plugin:react/jsx-runtime"],
   "parserOptions": {
-    "ecmaVersion": 12,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "ecmaVersion": 12
   },
-  "plugins": ["@typescript-eslint"],
-  "rules": {}
+  "plugins": ["@typescript-eslint", "react-hooks"],
 }
