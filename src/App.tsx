@@ -1,5 +1,7 @@
+import Hello from './components/Hello';
+
 import './App.scss';
 
-const App = () => <h1>Hello, world!</h1>;
+const App = () => <Hello name="World" />;
 
 export default App;
