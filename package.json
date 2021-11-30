@@ -17,6 +17,7 @@
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-react": "^1.1.0",
+    "autoprefixer": "^10.4.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb": "^19.0.1",
     "eslint-config-airbnb-typescript": "^16.0.0",
@@ -38,4 +39,10 @@
   },
   "resolutions": {
     "@types/react": "^17.0.37"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE >= 11"
+  ]
 }
