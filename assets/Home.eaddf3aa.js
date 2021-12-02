@@ -1,1 +1,0 @@
-import{r as e}from"./vendor.1beb500d.js";import{j as o}from"./index.49ca7d54.js";function t(){return e.exports.useEffect(()=>(console.log("Home ->"),()=>{console.log("Home <-")}),[]),o("h2",{children:"This is Home"})}export{t as default};
