@@ -1,6 +1,7 @@
 {
   "name": "react-vite-ts-eslint-prettier-template",
-  "version": "0.0.0",
+  "version": "1.0.5",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
