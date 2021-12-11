@@ -8,4 +8,11 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), reactScopedCssPlugin() as any],
   base: '',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/variables";`,
+      },
+    },
+  },
 });
