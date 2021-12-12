@@ -1,0 +1,24 @@
+body {
+  --main-color: #{$main-color};
+  --main-accent-color: #{$main-accent-color};
+  --secondary-accent-color: #{$secondary-accent-color};
+  --main-background-color: #{$main-background-color};
+  --secondary-background-color: #{$secondary-background-color};
+
+  &.light {
+    --main-color: #{$secondary-color};
+    --main-accent-color: #{$main-background-color};
+    --secondary-accent-color: #{$secondary-background-color};
+    --main-background-color: #{$main-accent-color};
+    --secondary-background-color: #{$secondary-accent-color};
+  }
+
+  background-color: var(--main-background-color);
+  color: var(--main-accent-color);
+  font-family: Open Sans, -apple-system, ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}

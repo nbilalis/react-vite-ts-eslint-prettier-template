@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.25em;
+  border-bottom: 1px solid var(--secondary-background-color);
+}
+
+#title {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+#logo {
+  color: var(--main-color);
+  fill: currentColor;
+  width: 1.75em;
+}
+
+main {
+  padding: 0.25em 1.25em;
+}
