@@ -1,13 +1,17 @@
 # Starting point for React apps
 
-This is an opinionated template, for setting up a React app.
+[![Build & deploy](https://github.com/nbilalis/react-vite-ts-eslint-prettier-template/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/nbilalis/react-vite-ts-eslint-prettier-template/actions/workflows/build-deploy.yml) [![Create Archive](https://github.com/nbilalis/react-vite-ts-eslint-prettier-template/actions/workflows/create-release.yml/badge.svg)](https://github.com/nbilalis/react-vite-ts-eslint-prettier-template/actions/workflows/create-release.yml)
 
-It uses:
+This is an opinionated starting point, to get you going with React & Vite.
+
+## It uses:
 
 - Vite
 - TypeScript
 - ESLint
 - Prettier
+- React Router
+- Scoped SCSS
 
 ## Steps to reproduce
 
