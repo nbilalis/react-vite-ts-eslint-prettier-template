@@ -1,7 +1,22 @@
-import Hello from './components/Hello';
+import { Route, Routes } from 'react-router-dom';
 
-import './App.scss';
+import ThemeProvider from './store/ThemeProvider';
 
-const App = () => <Hello name="World" />;
+import Layout from './views/Layout';
+import Home from './views/Home';
+import About from './views/About';
+
+function App() {
+  return (
+    <ThemeProvider>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </ThemeProvider>
+  );
+}
 
 export default App;

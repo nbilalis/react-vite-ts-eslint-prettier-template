@@ -1,6 +1,15 @@
 # Release notes
 
-This is a release, with a starting point, to get you started with React & Vite.
+This is an opinionated starting point, to get you going with React.
+
+## It uses
+
+- Vite
+- TypeScript
+- ESLint
+- Prettier
+- React Router
+- Scoped SCSS
 
 ## Instructions
 
@@ -8,4 +17,5 @@ This is a release, with a starting point, to get you started with React & Vite.
 1. Extract its files in a folder.
 1. Run `yarn` in the folder.
 1. Make a killer app.
+1. …
 1. Profit.
