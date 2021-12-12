@@ -15,30 +15,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
 
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 16.x
 
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Install NPM packages
       run: yarn # npm ci
+
+    - name: Repair basename
+      id: repair_basename
+      uses: jacobtomlinson/gha-find-replace@v2
+      with:
+        find: "basename=\"\""
+        replace: "basename=\"react-vite-ts-eslint-prettier-template\""
+        include: "**main.tsx"
+        regex: false
+
+    - name: Check outputs and modified files
+      run: |
+        test "${{ steps.repair_basename.outputs.modifiedFiles }}" == "1"
 
     - name: Build project
       run: npm run build
 
     - name: Run tests
       run: npm run test --if-present
-
-    - name: Repair paths
-      uses: jacobtomlinson/gha-find-replace@v2
-      with:
-        find: "/assets"
-        replace: "./assets"
-        include: "index.html"
-        regex: false
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
