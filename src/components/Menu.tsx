@@ -11,19 +11,24 @@ import lightIcon from '@/assets/icons/light.svg';
 function Menu() {
   const { theme, toggleTheme } = useTheme();
 
+  const routes = { '/': 'Home', '/about': 'About' };
+
   return (
     <nav>
       <ul>
-        <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/about">
-            About
-          </NavLink>
-        </li>
+        {Object.entries(routes).map(([key, value]) => (
+          <li key={key}>
+            <NavLink
+              to={key}
+              className={({ isActive }) => {
+                return isActive ? 'active' : '';
+              }}
+            >
+              {value}
+            </NavLink>
+          </li>
+        ))}
+
         <li>
           <button
             id="toggle-theme"
