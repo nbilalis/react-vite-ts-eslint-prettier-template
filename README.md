@@ -4,7 +4,7 @@
 
 This is an opinionated starting point, to get you going with React & Vite.
 
-## It uses:
+## It uses
 
 - Vite
 - TypeScript
@@ -20,26 +20,23 @@ This is an opinionated starting point, to get you going with React & Vite.
     - Run on of the following:
       - `yarn create vite <project-name> --template react-ts`
       - `npm init vite@latest <project-name> --template react-ts`
-1. Install the packages
+1. Install necessary packages
     - `cd <project-name>`
     - Run one of the following:
       - `yarn install` or just `yarn`
       - `npm install`
-1. Install ESLint
-    - ![favicon](https://www.google.com/s2/favicons?domain=eslint.org) [Getting Started with ESLint - ESLint - Pluggable JavaScript linter](https://eslint.org/docs/user-guide/getting-started)
-    - **CAUTION**: This step, might install a version of `ESLint` that does not meet the requirements of other packages in the `devDependencies`. It probably won't cause any issues, but it **will** produce a warning.
-    - Run one of the following:
-      - `yarn add eslint --dev`
-      - `npm install eslint --save-dev`
-1. Initialize ESLint
-    - Run one of the following:
-      - `eslint --init`
-      - `yarn run eslint --init`
-      - `npx eslint --init`
-    - **NOTE**: At the end of this step you will be asked to install some packages through `npm`. If you accept it, you will need to run `yarn install`, afterwards. If you do not accept it, manually install the packages mentioned.
-1. Install Prettier & plugins
-    - `yarn add prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb-typescript --dev`
-    - `npm install prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb-typescript --save-dev`
+1. Install template packages
+    - ![favicon](https://www.google.com/s2/favicons?domain=www.npmjs.com) [eslint-config-airbnb-typescript-prettier - npm](https://www.npmjs.com/package/eslint-config-airbnb-typescript-prettier)
+    - `yarn add typescript eslint prettier eslint-config-airbnb-typescript-prettier --dev`
+    - `npm install typescript eslint prettier eslint-config-airbnb-typescript-prettier --save-dev`
+1. Add ESLint template
+    - make a `.eslintrc.js` file, with the following contents:
+
+      ```js
+      module.exports = {
+        extends: "airbnb-typescript-prettier"
+      };
+      ```
 
 ## Start the development server
 
