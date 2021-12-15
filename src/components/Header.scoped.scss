@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  border-bottom: 1px solid var(--secondary-background-color);
+}
+
+#title {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  height: 2em;
+}
+
+#logo {
+  color: var(--main-color);
+  fill: currentColor;
+  width: 1.5em;
+}

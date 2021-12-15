@@ -22,3 +22,20 @@ body {
   transition: color 0.5s;
   transition: background-color 0.5s;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: min-content;
+}
+
+main {
+  height: auto;
+}
+
+footer {
+  height: min-content;
+}
