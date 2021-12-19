@@ -7,9 +7,9 @@ import './Header.scoped.scss';
 function Header() {
   return (
     <header>
-      <div id="title">
+      <div id="wrapper">
         <svg id="logo" data-src={logo} />
-        <span>React - Vite - TypeScript template</span>
+        <span id="title">React - Vite - TypeScript template</span>
       </div>
       <Menu />
     </header>

@@ -6,17 +6,25 @@ header {
   border-bottom: 1px solid var(--secondary-background-color);
 }
 
-#title {
+#wrapper {
   display: flex;
   gap: 0.5em;
   align-items: center;
   font-size: 1.1em;
   font-weight: 500;
   height: 2em;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 
 #logo {
   color: var(--main-color);
   fill: currentColor;
-  width: 1.5em;
+  min-width: 1.75rem;
+  width: 1.75rem;
+}
+
+#title {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
