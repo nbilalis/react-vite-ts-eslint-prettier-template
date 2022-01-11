@@ -2,9 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 
 import ThemeProvider from './store/ThemeProvider';
 
-import Layout from './views/Layout';
-import Home from './views/Home';
 import About from './views/About';
+import Home from './views/Home';
+import Layout from './views/Layout';
 
 function App() {
   return (

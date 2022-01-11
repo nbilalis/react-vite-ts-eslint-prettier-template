@@ -1,12 +1,13 @@
 import { Outlet } from 'react-router-dom';
+
 import 'external-svg-loader';
 
 import ThemeProvider from '@/store/ThemeProvider';
 
 import Header from '@/components/Header';
 
-import './Layout.scss';
 import './Layout.scoped.scss';
+import './Layout.scss';
 
 function Layout() {
   return (

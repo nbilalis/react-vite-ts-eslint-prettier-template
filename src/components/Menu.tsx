@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router-dom';
+
 import 'external-svg-loader';
 
 import { useTheme } from '@/store/ThemeProvider';
 
-import './Menu.scoped.scss';
-
 import darkIcon from '@/assets/icons/dark.svg';
 import lightIcon from '@/assets/icons/light.svg';
+
+import './Menu.scoped.scss';
 
 function Menu() {
   const { theme, toggleTheme } = useTheme();
