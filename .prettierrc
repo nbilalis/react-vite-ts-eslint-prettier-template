@@ -8,11 +8,13 @@
   "importOrder": [
     "^react",
     "^\\w",
+    "/types/",
     "/hooks/",
     "/store/",
     "/views/",
     "/components/",
     "/assets/",
+    "^./",
     "css$"
   ],
   "importOrderSeparation": true,
