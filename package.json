@@ -43,6 +43,9 @@
     "vite": "^2.9.1",
     "vite-tsconfig-paths": "^3.4.1"
   },
+  "resolutions": {
+    "@types/react": "^17.0.43"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
