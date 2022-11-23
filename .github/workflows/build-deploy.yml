@@ -32,7 +32,7 @@ jobs:
       uses: jacobtomlinson/gha-find-replace@v2
       with:
         find: "basename=\"\""
-        replace: "basename=\"react-vite-ts-eslint-prettier-template\""
+        replace: "basename=\"${{ github.event.repository.name }}\""
         include: "**main.tsx"
         regex: false
 

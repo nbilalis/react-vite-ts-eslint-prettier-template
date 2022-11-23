@@ -19,12 +19,7 @@ function Menu() {
       <ul>
         {Object.entries(routes).map(([key, value]) => (
           <li key={key}>
-            <NavLink
-              to={key}
-              className={({ isActive }) => {
-                return isActive ? 'active' : '';
-              }}
-            >
+            <NavLink to={key} className={({ isActive }) => (isActive ? 'active' : '')}>
               {value}
             </NavLink>
           </li>

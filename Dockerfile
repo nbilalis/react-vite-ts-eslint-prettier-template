@@ -5,7 +5,7 @@
 # Build step / image
 # -------------------------------------------------- #
 
-FROM node:17-alpine as build
+FROM node:18-alpine as build
 
 # set working directory
 WORKDIR /app
@@ -14,7 +14,7 @@ WORKDIR /app
 # ENV PATH /app/node_modules/.bin:$PATH
 
 # install npm
-RUN npm install -g npm@8.3.1
+RUN npm install -g npm@8.19.2
 
 # install app dependencies
 COPY package.json ./
@@ -44,11 +44,11 @@ CMD ["nginx", "-g", "daemon off;"]
 # -------------------------------------------------- #
 
 ## Remove previous build & container
-# docker image rm react-client --force
-# docker rm react-client-container --force
+# docker image rm react-template --force
+# docker rm react-template-container --force
 
 ## Build image
-# docker build -t react-client .
+# docker build -t react-template .
 
 ## Run the container and remove it after it exits
-# docker run -it -d --name react-client-container --rm -p 1337:80 react-client
+# docker run -it -d --name react-template-container --rm -p 1337:80 react-template

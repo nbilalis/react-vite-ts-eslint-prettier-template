@@ -11,8 +11,7 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext({
   theme: initialValue,
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  toggleTheme: () => {},
+  toggleTheme: () => null,
 } as ThemeContextValue);
 
 const useTheme = () => useContext(ThemeContext);

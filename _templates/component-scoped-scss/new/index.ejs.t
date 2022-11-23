@@ -6,7 +6,7 @@ unless_exists: true
 import './<%= name %>.scoped.scss';
 
 function <%= name %>() {
-  return <>...</>;
+  return <>…</>;
 }
 
 export default <%= name %>;
