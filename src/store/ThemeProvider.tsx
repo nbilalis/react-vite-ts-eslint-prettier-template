@@ -1,27 +1,30 @@
+import type { ReactNode } from 'react';
 import { createContext, useCallback, useContext, useEffect, useMemo } from 'react';
 
 import useLocalStorageState from '@/hooks/useLocalStorageState';
 
-const initialValue = 'dark';
+type ThemeOption = 'dark' | 'light';
+
+const initialValue: ThemeOption = 'dark';
 
 interface ThemeContextValue {
-  theme: 'dark' | 'light';
+  theme: ThemeOption;
   toggleTheme: () => void;
 }
 
-const ThemeContext = createContext({
+const ThemeContext = createContext<ThemeContextValue>({
   theme: initialValue,
   toggleTheme: () => null,
-} as ThemeContextValue);
+});
 
 const useTheme = () => useContext(ThemeContext);
 
 interface ThemeProviderProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 function ThemeProvider({ children }: ThemeProviderProps) {
-  const [theme, setTheme] = useLocalStorageState<'dark' | 'light'>('theme', initialValue);
+  const [theme, setTheme] = useLocalStorageState('theme', initialValue);
 
   useEffect(() => {
     if (theme === 'light') {
