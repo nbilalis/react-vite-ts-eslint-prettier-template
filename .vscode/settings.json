@@ -20,6 +20,7 @@
     "source.fixAll.eslint": true
   },
 
+  "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "*.jsx": "$(capture).css, $(capture).*.css, $(capture).scss, $(capture).*.scss",
     "*.tsx": "$(capture).css, $(capture).*.css, $(capture).scss, $(capture).*.scss"
